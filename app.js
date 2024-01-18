@@ -18,7 +18,7 @@ app.use(
     })
 )
 
-mongoose.connect('mongodb+srv://thettun1741997:1112019-tt@kilotaxi.ntwhcrt.mongodb.net/testing?retryWrites=true&w=majority')
+mongoose.connect('mongodb+srv://thettun1741997:<PASSWORD>@kilotaxi.ntwhcrt.mongodb.net/testing?retryWrites=true&w=majority')
 .then(result => {
   app.listen(4000)
 })
