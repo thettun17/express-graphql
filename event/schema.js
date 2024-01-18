@@ -1,6 +1,4 @@
-const { buildSchema } = require("graphql")
-
-module.exports = buildSchema(`
+module.exports = `
     type EventType {
         _id: ID!
         title: String!
@@ -22,4 +20,4 @@ module.exports = buildSchema(`
     type Mutation {
         createEvent(input: EventInput!): EventType
     }
-`)
+`

@@ -1,8 +1,4 @@
-const { mergeSchemas } = require("graphql-tools");
+const { buildSchema } = require("graphql")
 const eventSchema = require('../event/schema')
 
-const schemas = mergeSchemas({
-    schemas: [eventSchema],
-  });
-  
-  module.exports = schemas;
+module.exports = buildSchema(eventSchema);
